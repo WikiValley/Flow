@@ -287,8 +287,8 @@ class Hooks {
 			"$dir/db_patches/patch-ref_id-phase1.sql" );
 		$updater->dropExtensionIndex( 'flow_ext_ref', 'flow_ext_ref_idx_v2',
 			"$dir/db_patches/patch-dropindex-flow_ext_ref_idx_v2.sql" );
-		$updater->modifyExtensionField( 'flow_ext_ref', 'ref_target',
-			"$dir/db_patches/patch-ref_target_not_null.sql" );
+		#$updater->modifyExtensionField( 'flow_ext_ref', 'ref_target',
+		#	"$dir/db_patches/patch-ref_target_not_null.sql" );
 		$updater->addExtensionIndex( 'flow_ext_ref', 'flow_ext_ref_idx_v3',
 			"$dir/db_patches/patch-addindex_flow_ext_ref_idx_v3.sql" );
 		$updater->dropExtensionIndex( 'flow_topic_list', 'flow_topic_list_pk',
