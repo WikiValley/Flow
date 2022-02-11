@@ -82,8 +82,8 @@ class WikiLinkFixer implements Fixer {
 			$attributes
 		);
 		// create new DOM from this MW-built link
-		$replacementNode = Utils::createDOM( $html )
-			->getElementsByTagName( 'a' )
+		$replacementNode = Utils::createDOM( '<node>' . $html . '</node>' )
+			->getElementsByTagName( 'node' )
 			->item( 0 );
 		// import MW-built link node into content DOM
 		// @phan-suppress-next-line PhanTypeMismatchArgumentNullableInternal
